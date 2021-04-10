@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html LANG="ES">
+<title>Visualización para analítica de datos - Ucentral</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+<link rel="icon" href="w3images/favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    body,h1,h2,h3,h4,h5,h6{font-family: 'Nanum Gothic', sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body class="w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-blue-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right  w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="w3images/mn.jpg"  alt="imagencurso" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>VISUALIZACIÓN</b></h4>
+        <p class="w3-text-white">Universidad Central</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-chalkboard fa-fw w3-margin-right"></i>CURSO</a>
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-th-large fa-fw w3-margin-right"></i>MATERIAL</a>        
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
+    </div>
+    <a href="https://www.ucentral.edu.co"><img src="https://www.ucentral.edu.co/themes/ucentral/img/template/Universidad%20Central.png" alt="ucentral" ></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header>
+        <a href="#"><img src="w3images/mn.jpg" alt="imagencurso"  style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container" id="about">
+            <h1>Visualización para analítica de datos</h1>
+            <b class="w3-large">Universidad Central</b>
+            <div class="w3-section  w3-padding-16">
+            <i class="w3-large">Carlos Isaac Zainea Maya</i>
+            <br>
+            <a href="https://izainea.github.io"><i>www.izainea.github.io</i></a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Images of Me -->
+    <div class="w3-container w3-padding-16 " >
+        <h2 class="w3-xlarge">Objetivos del curso</h2>
+        <div class="w3-panel w3-padding-16">
+        <p> La aplicación de las técnicas y conceptos matemáticos, adquiridos por los estudiantes de ingeniera en las
+            asignaturas de formación básica, a problemas reales relacionados con su futuro ámbito profesional requiere
+            el desarrollo de tres habilidades fundamentales:</p>
+        <div class="w3-padding">
+            <p><i class="fas fa-check "> El modelado matemático:</i> La capacidad de representar el comportamiento de un sistema y/o
+                problema real dado, mediante expresiones, relaciones y/o ecuaciones, propios de la matemática.</p>
+
+            <p><i class="fas fa-check "> Destreza en métodos numéricos:</i> El conocimiento, entendimiento y apropiación de los métodos
+                que permiten la implementación computacional de conceptos y técnicas teóricas matemáticas. Así
+                mismo, el entendimiento de las limitaciones y niveles de error de dichos métodos.
+            </p>
+
+            <p><i class="fas fa-check "> Uso de software especializado:</i> La familiarización con el lenguaje de programación Python.
+                Esta asignatura propicia el crecimiento de las habilidades mencionadas, en los estudiantes de ingeniería.
+
+            </p>
+
+        </div>
+        </div>
+
+    </div>
+
+    <div class="w3-panel  w3-padding-16  " >
+        <h2 class="w3-xlarge">Evaluación del curso</h2>
+        <p> Tres cortes que se evaluaran como se detalla a continuación:</p>
+
+        <div class="w3-row">
+        <div class="w3-card-4 w3-third" style="width:30%;">
+            <header class="w3-container w3-teal">
+                <h4>Primer corte:</h4>
+            </header>
+
+            <div class="w3-container">
+                <ul>
+                    <li>Practicas, talleres, quices (50%)</li>
+                    <li>Examen (30%)</li>
+                    <li>Avance Proyecto (20%)</li>
+                </ul>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <h5></h5>
+                </footer>
+            </div>
+
+            <div class="w3-card-4 w3-third" style="width:30%;">
+                <header class="w3-container w3-purple">
+                    <h4>Segundo corte:</h4>
+                </header>
+
+                <div class="w3-container">
+                    <ul>
+                        <li>Practicas, talleres, quices (50%)</li>
+                        <li>Examen (30%)</li>
+                        <li>Avance Proyecto (20%)</li>
+                    </ul>
+                </div>
+
+                <footer class="w3-container w3-purple">
+                    <h5></h5>
+                </footer>
+            </div>
+
+            <div class="w3-card-4 w3-third" style="width:30%;">
+                <header class="w3-container w3-pink">
+                    <h4>Tercer corte:</h4>
+                </header>
+
+                <div class="w3-container">
+                    <ul>
+                        <li>Practicas, talleres, quices (60%)</li>
+                        <li>Entrega proyecto final (40%)</li>
+                        <br>
+                    </ul>
+                </div>
+
+                <footer class="w3-container w3-pink">
+                    <h5></h5>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-16 " style="margin-bottom:32px">
+        <h3>Algunas Recomendaciones y anuncios</h3>
+        <div class="w3-panel w3-red">
+        <p class="w3-medium w3-center "><b>El producto final del proyecto deberá ser un video, pantalla compartida, donde los estudiantes explican en
+            detalle cada uno de los pasos que realizaron.</b></p>
+        </div>
+        <h5><b>Reglas mínimas:</b></h5>
+        <ul>
+            <li><i class="far fa-check-square fa-fw w3-margin-right"></i>
+                Las notas se calculan de 0.0 hasta 5.0, en múltiplos de 0.1.
+            </li>
+
+            <li><i class="far fa-check-square fa-fw w3-margin-right"></i>
+                La asignatura se pierde con el 20% de fallas (10 horas de clase/7 clases).
+            </li>
+
+            <li><i class="far fa-check-square fa-fw w3-margin-right"></i>
+                La ética académica es un atributo evaluado permanentemente. El intento o ejecución de cualquier
+                tipo de fraude académico es inaceptable y tendrá repercusión en todos los estudiantes que el
+                docente entienda están relacionados.
+            </li>
+
+
+
+        </ul>
+        </div>
+        <div class="w3-container w3-padding-16 ">
+        <h3>Aptitudes y habilidades que se lograrán y aplicaran en el curso</h3>
+            <br>
+
+        <!-- Progress bars / Skills -->
+        <div class="w3-card-4"><i class="fab fa-python w3-margin-right w3-xlarge"></i>Python</div>
+        <div class="w3-grey">
+            <div class="w3-container w3-blue-grey w3-padding w3-center" style="width:80%">80%</div>
+        </div>
+            <br>
+
+            <div class="w3-card-4"><i class="fa fa-calculator w3-margin-right w3-xlarge"></i>Modelado Numérico</div>
+            <div class="w3-grey">
+                <div class="w3-container w3-blue-grey w3-padding w3-center" style="width:95%">95%</div>
+            </div>
+            <br>
+            <div class="w3-card-4"><i class="glyphicon glyphicon-blackboard w3-margin-right w3-xlarge"></i>Algoritmia</div>
+            <div class="w3-grey">
+                <div class="w3-container w3-blue-grey w3-padding w3-center" style="width:85%">85%</div>
+            </div>
+    </div>
+
+    <! -- Sección Material>
+    <!-- First Photo Grid-->
+    <div class="w3-container w3-blue-gray w3-padding-64"  id="portfolio">
+
+        <h2> Material del Curso</h2>
+
+    <div class="w3-row-padding w3-padding-32" >
+        <a href="https://drive.google.com/file/d/1vDCQjwdmOATiSRcEFOEj92TKivxkUlg9/view?usp=sharing"><div class="w3-third w3-container w3-margin-bottom w3-hover-opacitys">
+            <img src="w3images/slb.png" alt="Silabo" style="width:100%;height: 240px" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <br>
+                <p><b>Sílabo del curso</b></p>
+                <p>El documento institucional que contiene la información del curso. Aquí encontrará las finalidades formativas de este espacio e información bibliográfica complementaria. </p>
+            </div>
+        </div></a>
+        <a href="https://drive.google.com/file/d/1VgMMYmHLl4JUdN_0OB6nCKjK13lKVdIM/view?usp=sharing"><div class="w3-third w3-container w3-margin-bottom">
+            <img src="w3images/pda.png" alt="Curso Python" style="width:100% ;height: 240px" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <br>
+                <p><b>PDA del curso</b></p>
+                <p>En este documento encontrará la programación semana a semana del curso, utilice este documento para repasar y adelantarse cuando sea necesario.</p>
+                <br>
+            </div>
+        </div></a>
+        <a href="https://izainea.github.io/Curso-Python/"><div class="w3-third w3-container w3-margin-bottom">
+            <img src="w3images/cp.png" alt="Curso Python" style="width:100% ;height: 240px" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <br>
+                <p><b>Curso introductorio de Python</b></p>
+                <p>Es el curso ofrecido para la Maestría en Analítica de Datos de la Universidad Central, usaremos algunos de esos cuadernos para revisar algunos conceptos elementales del lenguaje Python. </p>
+            </div>
+        </div></a>
+
+        <a href="files/Matplotlib.ipynb"><div class="w3-third w3-container w3-margin-bottom w3-hover-opacitys">
+            <img src="w3images/mpc.png" alt="Silabo" style="width:100%;height: 240px" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <br>
+                <p><b>Matplotlib, seaborn, plotly.express</b></p>
+                <p>Tutorial de uso de estos tres paquetes gráficos.</p>
+                <br>
+            </div>
+        </div></a>
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-large">
+        <h4 id="contact"><b>Contacto</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+            <div class="w3-third w3-blue-grey">
+                <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                <p>czaineam@ucentral.edu.co</p>
+                <p><br></p>
+            </div>
+            <div class="w3-third w3-teal">
+                <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                <p>Universidad Central</p>
+                <p>Bogotá, Colombia</p>
+            </div>
+            <div class="w3-third w3-blue-grey">
+                <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                <p>Departamento de Matemáticas</p>
+                 <p>   323 9868, ext.: 3457</p>
+            </div>
+        </div>
+        <hr class="w3-opacity">
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-blue-grey">
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <h3>Isaac Zainea</h3>
+                <p>Este espacio es académico y está invitado a aprovechar en múltiples formas el material que
+                    encuentra aquí. No olvide referenciar.</p>
+                <p>Desarrollado por <a href="https://izainea.github.io" target="_blank" class="w3-teal">Isaac Zainea</a></p>
+            </div>
+
+            <div class="w3-half">
+                <h3>Más recursos</h3>
+                <ul class="w3-ul w3-hoverable">
+                    <a href="https://izainea.github.io/Curso-Python/"><li class="w3-padding-16">
+                        <img src="w3images/cp.png" alt="cursopython" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large w3-text-white">Curso Python</span><br>
+                        <span  class="w3-text-white">Maestría en Analítica de Datos</span>
+                    </li></a>
+                    <a href="https://github.com/izainea"><li class="w3-padding-16">
+                       <i  class="fab fa-github w3-left w3-margin-right" style='font-size:50px;color:white'></i>
+                        <span class="w3-large w3-text-white">Repositorio </span><br>
+                        <span class="w3-text-white">Isaac Zainea</span>
+                    </li></a>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24"><p class="w3-right w3-small" >Powered by <a href="https://izainea.github.io" title="izainea" target="_blank" class="w3-hover-opacity"><i>Isaac Zainea</i></a></p></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
